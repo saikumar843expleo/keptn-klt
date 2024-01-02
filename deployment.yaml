@@ -20,6 +20,13 @@ spec:
       containers:
       - name: coffeeshop
         image: shmdus/java-app:15
+        resources:
+          limits:
+            cpu: 5m
+            memory: 128Mi
+          requests:
+            cpu: 1m
+            memory: 64Mi        
         ports:
         - containerPort: 8083
 ---
