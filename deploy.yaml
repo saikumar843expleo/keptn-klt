@@ -22,13 +22,13 @@ spec:
         image: shmdus/java-app:18
         ports:
         - containerPort: 8083
-        # resources:
-        #   limits:
-        #     cpu: 20m
-        #     memory: 500Mi
-        #   requests:
-        #     cpu: 10m
-        #     memory: 200Mi
+        resources:
+          limits:
+            cpu: 500m
+            memory: 400mi
+          requests:
+            cpu: 300m
+            memory: 200Mi
 
 ---
 apiVersion: apps/v1
