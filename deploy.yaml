@@ -24,10 +24,10 @@ spec:
         - containerPort: 8083
         resources:
           limits:
-            cpu: 100m
+            cpu: 20m
             memory: 500Mi
           requests:
-            cpu: 20m
+            cpu: 10m
             memory: 200Mi
 
 ---
