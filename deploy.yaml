@@ -1,6 +1,3 @@
-
-
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -25,9 +22,6 @@ spec:
         image: 'goksatexpleo/javacoffeeshopkeptn:1'
         ports:
         - containerPort: 8083
-      - name: stress
-        image: progrium/stress
-        command: ["stress", "--cpu", "2", "--timeout", "60s"]
         # resources:
         #   limits:
         #     cpu: 20m
