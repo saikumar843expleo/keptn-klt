@@ -25,11 +25,11 @@ spec:
         - containerPort: 8083
         resources:
           limits:
-            cpu: 20m
-            memory: 500Mi
+            cpu: 50m
+            memory: 200Mi
           requests:
-            cpu: 7m
-            memory: 250Mi
+            cpu: 20m
+            memory: 100Mi
 
 ---
 apiVersion: apps/v1
