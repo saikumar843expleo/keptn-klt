@@ -15,11 +15,11 @@ spec:
       labels:
         app.kubernetes.io/part-of: keptndemoapp
         app.kubernetes.io/name: javacoffeeshop
-        app.kubernetes.io/version: 0.0.6
+        app.kubernetes.io/version: 0.0.1
     spec:
       containers:
       - name: javacoffeeshop
-        image: shmdus/java-app:18
+        image: shmdus/java-app:15
         ports:
         - containerPort: 8083
         resources:
