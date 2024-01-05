@@ -10,4 +10,4 @@ spec:
   ports:
       port: 8080
       targetPort: 8083
-      nodePort: 30450
+      #nodePort: 30450
