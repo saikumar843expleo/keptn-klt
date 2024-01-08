@@ -6,9 +6,9 @@ metadata:
 spec:
   selector:
     app.kubernetes.io/name: javacoffeeshop
+  type: NodePort
   ports:
     - protocol: TCP
-      type: NodePort
       port: 8080
       targetPort: 8083
-      #nodePort: 30450
+      nodePort: 30450
