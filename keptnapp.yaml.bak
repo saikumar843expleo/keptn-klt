@@ -13,5 +13,7 @@ items:
     workloads:
     - name: javacoffeeshop
       version: 0.0.6
+    preDeploymentTasks:
+    - pre-deploy-task
     postDeploymentEvaluations:
     - post-deploy-eval
