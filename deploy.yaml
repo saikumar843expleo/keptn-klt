@@ -15,7 +15,7 @@ spec:
       labels:
         app.kubernetes.io/part-of: keptndemoapp
         app.kubernetes.io/name: javacoffeeshop
-        app.kubernetes.io/version: 0.1.0
+        app.kubernetes.io/version: 0.2.0
         keptn.sh/pre-deployment-tasks: pre-deploy-task
         keptn.sh/post-deployment-tasks: post-deploy-task
         # keptn.sh/pre-deployment-evaluations: 
@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
       - name: javacoffeeshop
-        image: shmdus/java-app:15
+        image: shmdus/java-app:18
         ports:
         - containerPort: 8083
         resources:
