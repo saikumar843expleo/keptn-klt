@@ -8,8 +8,8 @@ spec:
     name: postcheck
     image: curlimages/curl
     command:
-      - 'sh'
-      - '-c'
+      - /bin/sh
+      - -c
       - sleep
       - '3600'
       - curl http://javacoffeeshop.keptndemo:8080
