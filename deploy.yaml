@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: javacoffeeshop
-        image: shmdus/java-app:18
+        image: shmdus/java-app:15
         ports:
         - containerPort: 8083
         resources:
