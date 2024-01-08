@@ -1,0 +1,17 @@
+apiVersion: v1
+items:
+- apiVersion: lifecycle.keptn.sh/v1alpha3
+  kind: KeptnApp
+  metadata:
+    labels:
+      app.kubernetes.io/managed-by: keptn
+    name: keptndemoapp
+    namespace: keptndemo
+  spec:
+    revision: 1
+    version: 0.0.6
+    workloads:
+    - name: javacoffeeshop
+      version: 0.0.6
+    postDeploymentEvaluations:
+    - post-deploy-eval
