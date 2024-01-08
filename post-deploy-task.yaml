@@ -11,5 +11,5 @@ spec:
       - /bin/bash
       - -c
       - sleep
-      - 3600
+      - '3600'
       - curl http://javacoffeeshop.keptndemo:8080
