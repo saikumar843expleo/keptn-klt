@@ -6,5 +6,5 @@ metadata:
 spec:
   provider:
     name: prometheus-provider
-  query: 'container_cpu_usage_seconds_total{container="javacoffeeshop", namespace="keptndemo"}'
+  query: 'avg(container_cpu_usage_seconds_total{container="javacoffeeshop", namespace="keptndemo"})'
   fetchIntervalSeconds: 10
