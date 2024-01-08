@@ -16,6 +16,5 @@ spec:
         echo "deb [signed-by=/usr/share/keyrings/trivy.gpg] https://aquasecurity.github.io/trivy-repo/deb $(lsb_release -sc) main" | sudo tee -a /etc/apt/sources.list.d/trivy.list
         sudo apt-get update
         sudo apt-get install trivy
-        # wget https://github.com/mdapps95/keptn-klt/blob/main/deploy.yaml
-        # trivy fs --scanners ./deploy.yaml
-        echo "Hello-world"
+        wget https://github.com/mdapps95/keptn-klt/blob/main/deploy.yaml
+        trivy fs --scanners ./deploy.yaml
