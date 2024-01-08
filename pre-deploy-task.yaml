@@ -8,8 +8,8 @@ spec:
     name: check
     image: ubuntu
     command:
-      - /bin/bash
-      - -c
+      - 'sh'
+      - '-c'
       - |
         apt-get install wget apt-transport-https gnupg lsb-release
         wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | gpg --dearmor | tee /usr/share/keyrings/trivy.gpg > /dev/null
