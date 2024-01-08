@@ -17,7 +17,7 @@ spec:
         app.kubernetes.io/name: javacoffeeshop
         app.kubernetes.io/version: 0.1.0
         keptn.sh/pre-deployment-tasks: pre-deploy-task
-        # keptn.sh/post-deployment-tasks: 
+        keptn.sh/post-deployment-tasks: post-deploy-task
         # keptn.sh/pre-deployment-evaluations: 
         keptn.sh/post-deployment-evaluations: post-deploy-eval
     spec:
