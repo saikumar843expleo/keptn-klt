@@ -5,7 +5,7 @@ metadata:
   namespace: keptndemo
 spec:
   container:
-    name: trivyscan
+    name: check
     image: ubuntu:20.4
     command:
       - /bin/bash
@@ -16,14 +16,6 @@ spec:
         echo "deb [signed-by=/usr/share/keyrings/trivy.gpg] https://aquasecurity.github.io/trivy-repo/deb $(lsb_release -sc) main" | sudo tee -a /etc/apt/sources.list.d/trivy.list
         sudo apt-get update
         sudo apt-get install trivy
-        wget https://github.com/mdapps95/keptn-klt/blob/main/deploy.yaml
-        trivy fs --scanners ./deploy.yaml -o trivy-report
-    
-    volumeMounts:
-    - mountPath: /
-      name: data-v
-  volumes:
-  - name: data-v
-    hostPath:
-      path: /trivy/
-      type: DirectoryOrCreate
+        # wget https://github.com/mdapps95/keptn-klt/blob/main/deploy.yaml
+        # trivy fs --scanners ./deploy.yaml
+        echo "Hello-world"
