@@ -10,6 +10,4 @@ spec:
     command:
       - /bin/sh
       - -c
-      - sleep
-      - '3600'
-      - curl http://javacoffeeshop:8080
+      - curl http://javacoffeeshop.keptndemo:8080
