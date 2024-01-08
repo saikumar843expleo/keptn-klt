@@ -8,4 +8,4 @@ spec:
     - keptnMetricRef:
         name: cpu-throttling
         namespace: keptndemo
-      evaluationTarget: "<50000m"
+      evaluationTarget: "<40"
