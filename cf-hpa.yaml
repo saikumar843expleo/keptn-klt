@@ -21,4 +21,4 @@ spec:
           name: cpu-throttling
         target:
           type: AverageValue
-          averageValue: 25000m
+          averageValue: 95000m
