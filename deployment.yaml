@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: javacoffeeshop-deployment
-  namespace: keptndemo
   labels:
     app.kubernetes.io/name: javacoffeeshop
 spec:
