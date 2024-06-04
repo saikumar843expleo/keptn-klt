@@ -1,1 +1,10 @@
-
+apiVersion: metrics.keptn.sh/v1alpha3
+kind: KeptnMetric
+metadata:
+  name: cpu-throttling
+  namespace: keptndemo
+spec:
+  provider:
+    name: prometheus-provider
+  query: 'avg(container_cpu_usage_seconds_total{container="javacoffeeshop", namespace="keptndemo"})'
+  fetchIntervalSeconds: 10
