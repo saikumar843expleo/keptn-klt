@@ -1,0 +1,13 @@
+apiVersion: lifecycle.keptn.sh/v1alpha3
+kind: KeptnTaskDefinition
+metadata:
+  name: post-deploy-task
+  namespace: keptndemo
+spec:
+  container:
+    name: postcheck
+    image: curlimages/curl
+    command:
+      - /bin/sh
+      - -c
+      - curl http://javacoffeeshop.keptndemo:8080
